@@ -27,4 +27,5 @@ urlpatterns = [
     path('api/', include(router.urls)),
     path('bookmarks/', include('bookmarks.urls')),
     path('', TemplateView.as_view(template_name='base.html')),
+    path('/konkonsah/', include('konkonsah.urls'))
 ]
